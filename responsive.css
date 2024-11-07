@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+  body{
+    height: 100%vh;
+    background-color: #93e9f1;
+    margin: 0;
+    padding: 0;
+  }
+  .profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .profileName {
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    z-index: 1;
+    font-weight: bold;
+  }
+  .span {
+    font-weight: 500;
+    margin-top: 1px;
+  }
+  .topnav {
+    border: 0cap;
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    gap: 0;
+    top: 15px;
+    left: 16%;
+  }
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    color: rgb(5, 12, 21);
+    text-decoration: none;
+    padding: 1px;
+    margin: 4px;
+    transition: all 0.5s ease-out;
+  }
+ 
+}
