@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,84 +9,159 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <style>
-  body{
+  body {
+    background-color: #93e9f1;
 
-  background-color: #93e9f1;
- 
-}
-h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-  font-weight: 800;
-  text-decoration-line: underline;
+  }
 
-}
-#table {
-  display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  margin-left: 25%;
-  border: 2px solid black;
-  border-radius: 5px;
-  width: fit-content;
-  transition: all 0.5s ease-out;
-}
-#table:hover {
-  border: 2px solid aliceblue;
-  border-radius: 5px;
-}
-table, td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  padding: 15px;
-}
-td {
-  font-weight: 600;
-}
+  /* Nav Section */
+  .profile {
+    margin: 0%;
+    padding: 0%;
+  }
 
-th {
-  background: hwb(0 16% 84%);
-  color:rgb(255, 255, 255);
-  border: 2px solid black;;
-  border-collapse: collapse;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 4px;
-}
-.darkBtn {
+  .profilePic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .profileName {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: 0;
+    font-weight: bold;
+  }
+
+  .span {
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .topnav {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    position: absolute;
+    gap: 0.5rem;
+    top: 2.5%;
+    left: 35%;
+    z-index: initial;
+  }
+
+  a {
+    font-family: Arial;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(5, 12, 21);
+    padding: 0.5rem;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: rgb(5, 12, 21);
+    color: aliceblue;
+  }
+
+  /* Hero Section */
+
+  h3 {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    text-decoration-line: underline;
+
+  }
+
+  #table {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 25%;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    transition: all 0.5s ease-out;
+  }
+
+  #table:hover {
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+  }
+
+  table,
+  td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+  }
+
+  td {
+    font-weight: 600;
+  }
+
+  th {
+    background: hwb(0 16% 84%);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 4px;
+  }
+
+  .darkBtn {
     position: fixed;
     left: 92%;
     top: 5%;
     size: 20px;
     cursor: pointer;
     transition: all 0.5s ease-out;
-}
-body.dark {background-color: #1d1818;} /* #9b59b6 */
-body.dark table,
-body.dark th,
-body.dark td,
-body.dark h1  {color: #fff;}
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
+  }
 
-.checkbox-label {
-  background-color: #111;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  body.dark {
+    background-color: #1d1818;
+  }
 
-.checkbox-label .ball {
+  /* #9b59b6 */
+  body.dark table,
+  body.dark th,
+  body.dark td,
+  body.dark .profile,
+  body.dark a,
+  body.dark h3,
+  body.dark .border {
+    color: #fff;
+  }
+
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .checkbox-label .ball {
     background-color: #fff;
     width: 22px;
     height: 22px;
@@ -95,58 +171,80 @@ body.dark h1  {color: #fff;}
     border-radius: 50%;
     transition: transform 0.2s linear;
   }
-  .fa-moon {color: #f1c40f;}
-.fa-sun {color: #f39c12;}
 
-  .checkbox:checked + .checkbox-label .ball {
-    transform: translateX(24px);
+  .fa-moon {
+    color: #f1c40f;
   }
 
+  .fa-sun {
+    color: #f39c12;
+  }
+
+  .checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+  }
 </style>
+
 <body>
-  <div class="darkBtn">
-    <input type="checkbox" class="checkbox" id="checkbox">
-    <label for="checkbox" class="checkbox-label">
+  <header>
+    <div class="topnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="profile">
+      <img src="pic/Mateen Photo.jpeg" alt="profilepic" class="profilePic">
+      <p class="profileName">I'M MATEEN <br><span class="span">Front-end Developer</span></p>
+    </div>
+
+    <div class="darkBtn">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbox-label">
         <i class="fas fa-sun"></i>
         <i class="fas fa-moon"></i>
         <span class="ball"></span>
-    </label>
-</div>
-<h1>Education</h1>
-<div id="table">
-  <table>
-    <tr>
-    <th>Qualification</th>
-    <th>Institution Name</th>
-    <th>University/Board</th>
-    <th>Durations</th>
-    <th>Percentage</th>
+      </label>
+    </div>
+  </header>
 
-    </tr>
-    <tr>
+  <h3>Education</h3>
+  <div id="table">
+    <table>
+      <tr>
+        <th>Qualification</th>
+        <th>Institution Name</th>
+        <th>University/Board</th>
+        <th>Durations</th>
+        <th>Percentage</th>
+
+      </tr>
+      <tr>
         <td>BCA</td>
         <td>Integral University, Lucknow</td>
         <td>IUL</td>
         <td>2022</td>
-        <td>CGPI 7.98</td>  
-     </tr>
-     <tr>
+        <td>CGPI 7.98</td>
+      </tr>
+      <tr>
         <td>Intermediate</td>
         <td>R.K.G Inter College,Semra, Deoria</td>
         <td>UP Board</td>
         <td>2018</td>
         <td>50%</td>
-        <tr> 
-            <td>Matric</td>
-            <td>Anjuman Islamiya Junior High School, Deoria</td>
-            <td>UP Board</td>
-            <td>2014</td>
-            <td>70%</td>
-        </tr>
-    </tr>
-</table>
-</div>
-  
-<script src="script.js"></script>
+      <tr>
+        <td>Matric</td>
+        <td>Anjuman Islamiya Junior High School, Deoria</td>
+        <td>UP Board</td>
+        <td>2014</td>
+        <td>70%</td>
+      </tr>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
