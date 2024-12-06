@@ -5,42 +5,37 @@ body {
 .profile {
   margin: 0%;
   padding: 0%;
+  font-family: Arial;
 }
 
 .profilePic {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: -20px;
   margin-left: 30px;
 }
+
 .profileName {
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: 4%;
+  left: 8%;
   z-index: 0;
-  font-weight: bold;
+  font-weight: 800;
 }
+
 .span {
-  font-weight: 500;
-  margin-top: 5px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-.main {
-  position: relative;
-  top: 100px;
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.developer {
-  position: relative;
-  top: 5%;
-}
-.description {
-  margin-top: -25px;
-  font-weight: bold;
-  font-size: none;
-}
 .topnav {
   border: 2px solid black;
   border-radius: 10px;
@@ -52,7 +47,7 @@ body {
   z-index: initial;
 }
 
-a {
+.topnav a {
   font-family: Arial;
   font-weight: 600;
   border-radius: 5px;
@@ -64,8 +59,8 @@ a {
   transition: all 0.5s ease-out;
 }
 
-a:hover,
-a:focus {
+.topnav a:hover,
+.topnav a:focus {
   background-color: rgb(5, 12, 21);
   color: aliceblue;
 }
@@ -76,10 +71,14 @@ a:focus {
   top: 5%;
   size: 20px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
+
 body.dark {
   background-color: #1d1818;
-} /* #9b59b6 */
+}
+
+/* #9b59b6 */
 body.dark .profile,
 body.dark a,
 body.dark .main,
@@ -131,8 +130,22 @@ body.dark td {
   transform: translateX(24px);
 }
 
+/* Main sectiom */
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.main p {
+  margin-top: -20px;
+  font-weight: 600;
+}
+
 .container-1 {
-  border: 1px solid rgb(146, 149, 151);
+  border: 1px solid rgb(82, 82, 82);
   border-radius: 10px;
   text-align: justify;
   padding: 10px;
@@ -140,12 +153,13 @@ body.dark td {
   justify-content: left;
   top: 90%;
   margin-left: 30px;
-  color: rgb(0, 0, 0);
   width: 35%;
+  color: rgb(0, 0, 0);
   transition: all 0.5s ease-out;
 }
+
 .container-2 {
-  border: 1px solid rgb(146, 149, 151);
+  border: 1px solid rgb(82, 82, 82);
   border-radius: 10px;
   padding: 10px;
   position: absolute;
@@ -157,6 +171,7 @@ body.dark td {
   width: 35%;
   transition: all 0.5s ease-out;
 }
+
 fieldset {
   border: 1px solid rgb(82, 82, 82);
   border-radius: 10px;
@@ -167,6 +182,7 @@ fieldset {
   margin-right: 20px;
   transition: all 0.5s ease-out;
 }
+
 .container-1:hover,
 fieldset:hover,
 .container-2:hover {

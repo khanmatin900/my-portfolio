@@ -28,7 +28,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-top: 15px;
+    margin-top: -20px;
     margin-left: 30px;
   }
 
@@ -45,6 +45,12 @@
     margin-top: 10px;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 
   .topnav {
     border: 2px solid black;
@@ -142,13 +148,17 @@
   /* Projects Section */
 
   .mini-projects {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 2px 8px 5px 8px;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    padding: 5px 8px 5px 8px;
     width: 400px;
     position: relative;
     margin: 10% 0% 0% 10%;
+    transition: all 1s ease-out;
+  }
 
+  .mini-projects:hover {
+    border-color: aliceblue;
   }
 
   h3 {
@@ -166,16 +176,24 @@
     color: black;
     padding: 5px;
     font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .mini a:hover {
+    color: #f39c12;
+    text-decoration: underline;
   }
 </style>
 
 <body>
   <header>
-    <div class="topnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="about.html">About</a>
+    <div class="navbar">
+      <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
 
     <div class="profile">
@@ -195,12 +213,12 @@
   </header>
 
   <div class="mini-projects">
-    <h3>Mini Projects</h3>
+    <h3>Mini Projects links</h3>
     <div class="mini">
-      <a href="https://khanmatin900.github.io/calculator-1/">1. Calculator</a>
-      <a href="https://khanmatin900.github.io/counter/">2. Counter</a>
-      <a href="">3. The Heart Trail</a>
-      <a href="https://khanmatin900.github.io/login-register-1/">4. LogIn & Register</a>
+      <a href="https://khanmatin900.github.io/calculator-1/">Calculator</a>
+      <a href="https://khanmatin900.github.io/counter/">Counter</a>
+      <a href="">The Heart Trail</a>
+      <a href="https://khanmatin900.github.io/login-register-1/">LogIn & Register</a>
     </div>
   </div>
 </body>

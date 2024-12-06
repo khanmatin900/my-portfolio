@@ -18,27 +18,35 @@
   .profile {
     margin: 0%;
     padding: 0%;
+    font-family: Arial;
   }
 
   .profilePic {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-top: 15px;
+    margin-top: -20px;
     margin-left: 30px;
   }
 
   .profileName {
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 4%;
+    left: 8%;
     z-index: 0;
-    font-weight: bold;
+    font-weight: 800;
   }
 
   .span {
-    font-weight: 500;
-    margin-top: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .topnav {
@@ -52,7 +60,7 @@
     z-index: initial;
   }
 
-  a {
+  .topnav a {
     font-family: Arial;
     font-weight: 600;
     border-radius: 5px;
@@ -64,8 +72,8 @@
     transition: all 0.5s ease-out;
   }
 
-  a:hover,
-  a:focus {
+  .topnav a:hover,
+  .topnav a:focus {
     background-color: rgb(5, 12, 21);
     color: aliceblue;
   }
@@ -187,11 +195,14 @@
 
 <body>
   <header>
-    <div class="topnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="about.html">About</a>
+
+    <div class="navbar">
+      <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
 
     <div class="profile">
