@@ -15,25 +15,32 @@
   }
 
   /* Nav Section */
-  .profile {
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial;
+  header {
+    border-bottom: 2px solid #efebd6;
+    padding-bottom: 10px;
+    background-color: #43608a;
+    align-items: center;
+  }
+
+  .profile-pic {
+    margin-left: 25px;
+    margin-top: 10px;
   }
 
   .profilePic {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-top: -20px;
-    margin-left: 30px;
+  }
+
+  .profile {
+    margin-left: 12px;
+    margin-top: 25px;
+    font-family: Arial;
+    color: #efebd6;
   }
 
   .profileName {
-    position: absolute;
-    top: 4%;
-    left: 8%;
-    z-index: 0;
     font-weight: 800;
   }
 
@@ -44,28 +51,27 @@
 
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 20px;
+    transition: all 0.5s ease-out;
+    color: #efebd6;
   }
 
   .topnav {
-    border: 2px solid black;
+    background-color: #efebd6;
+    border: 2px solid aliceblue;
     border-radius: 10px;
     padding: 0.5rem;
-    position: absolute;
     gap: 0.5rem;
-    top: 2.5%;
-    left: 35%;
-    z-index: initial;
+    margin-left: 22%;
   }
 
   .topnav a {
     font-family: Arial;
     font-weight: 600;
     border-radius: 5px;
-    color: rgb(5, 12, 21);
-    padding: 0.5rem;
+    color: #43608a;
+    padding: 0.3rem;
     margin: 10px;
     text-align: center;
     text-decoration: none;
@@ -74,7 +80,7 @@
 
   .topnav a:hover,
   .topnav a:focus {
-    background-color: rgb(5, 12, 21);
+    background-color: #43608a;
     color: aliceblue;
   }
 
@@ -195,28 +201,30 @@
 
 <body>
   <header>
-
     <div class="navbar">
+
+      <div class="profile-pic">
+        <img src="pic/Mateen Photo.jpeg" alt="profilepic" class="profilePic">
+      </div>
+      <div class="profile">
+        <p class="profileName">I'M MATEEN <br><span class="span">Front-end Developer</span></p>
+      </div>
+
       <div class="topnav">
         <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
         <a href="education.html">Education</a>
         <a href="about.html">About</a>
       </div>
-    </div>
 
-    <div class="profile">
-      <img src="pic/Mateen Photo.jpeg" alt="profilepic" class="profilePic">
-      <p class="profileName">I'M MATEEN <br><span class="span">Front-end Developer</span></p>
-    </div>
-
-    <div class="darkBtn">
-      <input type="checkbox" class="checkbox" id="checkbox">
-      <label for="checkbox" class="checkbox-label">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-        <span class="ball"></span>
-      </label>
+      <div class="darkBtn">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="slide"></span>
+        </label>
+      </div>
     </div>
   </header>
 

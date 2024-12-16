@@ -1,26 +1,35 @@
 body {
   height: 100%vh;
+  /* background-color: #efebd6; */
   background-color: #93e9f1;
 }
-.profile {
-  margin: 0%;
-  padding: 0%;
-  font-family: Arial;
+
+header {
+  border-bottom: 2px solid #efebd6;
+  padding-bottom: 10px;
+  background-color: #43608a;
+  align-items: center;
+}
+
+.profile-pic {
+  margin-left: 25px;
+  margin-top: 10px;
 }
 
 .profilePic {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-top: -20px;
-  margin-left: 30px;
+}
+
+.profile {
+  margin-left: 12px;
+  margin-top: 25px;
+  font-family: Arial;
+  color: #efebd6;
 }
 
 .profileName {
-  position: absolute;
-  top: 4%;
-  left: 8%;
-  z-index: 0;
   font-weight: 800;
 }
 
@@ -31,28 +40,27 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin-top: 20px;
+  transition: all 0.5s ease-out;
+  color: #efebd6;
 }
 
 .topnav {
-  border: 2px solid black;
+  background-color: #efebd6;
+  border: 2px solid aliceblue;
   border-radius: 10px;
   padding: 0.5rem;
-  position: absolute;
   gap: 0.5rem;
-  top: 2.5%;
-  left: 35%;
-  z-index: initial;
+  margin-left: 22%;
 }
 
 .topnav a {
   font-family: Arial;
   font-weight: 600;
   border-radius: 5px;
-  color: rgb(5, 12, 21);
-  padding: 0.5rem;
+  color: #43608a;
+  padding: 0.3rem;
   margin: 10px;
   text-align: center;
   text-decoration: none;
@@ -61,9 +69,11 @@ body {
 
 .topnav a:hover,
 .topnav a:focus {
-  background-color: rgb(5, 12, 21);
+  background-color: #43608a;
   color: aliceblue;
 }
+
+/* Dark-btn section */
 
 .darkBtn {
   position: fixed;
@@ -75,12 +85,11 @@ body {
 }
 
 body.dark {
-  background-color: #1d1818;
+  background-color: #2e2b2b;
 }
 
 /* #9b59b6 */
 body.dark .profile,
-body.dark a,
 body.dark .main,
 body.dark .container-1,
 body.dark .container-2,
@@ -132,45 +141,58 @@ body.dark td {
 
 /* Main sectiom */
 
-.main-section {
+.hero-section {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 25px 0px 20px 0px;
+  width: 98%;
+  height: 350px;
+  margin-left: 1%;
+  border: 2px solid #43608a;
+  border-radius: 10px;
+  border-color: #43608a;
+  background-color: #efebd6;
+  color: #efebd6;
 }
 
-.main p {
+.main p,
+h2 {
+  color: #43608a;
+  text-align: center;
   margin-top: -20px;
   font-weight: 600;
+  transition: all 0.5s ease-out;
 }
 
 .container-1 {
-  border: 1px solid rgb(82, 82, 82);
+  background-color: #43608a;
+  border: 1px solid #43608a;
   border-radius: 10px;
-  text-align: justify;
   padding: 10px;
-  position: absolute;
-  justify-content: left;
-  top: 90%;
-  margin-left: 30px;
-  width: 35%;
-  color: rgb(0, 0, 0);
+  width: 300px;
+  height: 250px;
   transition: all 0.5s ease-out;
 }
 
+.container-1 p {
+  word-spacing: normal;
+  font-size: 1rem;
+  text-align: justify;
+}
+
 .container-2 {
-  border: 1px solid rgb(82, 82, 82);
+  background-color: #43608a;
+  border: 1px solid #43608a;
   border-radius: 10px;
   padding: 10px;
-  position: absolute;
-  justify-content: left;
-  top: 118%;
-  margin-left: 30px;
-  width: fit-content;
-  color: rgb(0, 0, 0);
-  width: 35%;
+  width: 300px;
+  height: 250px;
   transition: all 0.5s ease-out;
 }
+
+/* Message-Section */
 
 fieldset {
   border: 1px solid rgb(82, 82, 82);
