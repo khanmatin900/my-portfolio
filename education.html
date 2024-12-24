@@ -42,6 +42,7 @@
 
   .profileName {
     font-weight: 800;
+    transition: all 1s ease-out;
   }
 
   .span {
@@ -84,55 +85,6 @@
     color: aliceblue;
   }
 
-  /* Hero Section */
-
-  h3 {
-    font-family: Arial;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    text-decoration-line: underline;
-
-  }
-
-  #table {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-left: 25%;
-    border: 2px solid black;
-    border-radius: 5px;
-    width: fit-content;
-    transition: all 0.5s ease-out;
-  }
-
-  #table:hover {
-    border: 2px solid aliceblue;
-    border-radius: 5px;
-  }
-
-  table,
-  td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 15px;
-  }
-
-  td {
-    font-weight: 600;
-  }
-
-  th {
-    background: hwb(0 16% 84%);
-    color: rgb(255, 255, 255);
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 4px;
-  }
-
   .darkBtn {
     position: fixed;
     left: 92%;
@@ -151,7 +103,6 @@
   body.dark th,
   body.dark td,
   body.dark .profile,
-  body.dark a,
   body.dark h3,
   body.dark .border {
     color: #fff;
@@ -175,7 +126,7 @@
     align-items: center;
   }
 
-  .checkbox-label .ball {
+  .checkbox-label .slide {
     background-color: #fff;
     width: 22px;
     height: 22px;
@@ -194,8 +145,65 @@
     color: #f39c12;
   }
 
-  .checkbox:checked+.checkbox-label .ball {
+  .checkbox:checked+.checkbox-label .slide {
     transform: translateX(24px);
+  }
+
+  /* Hero Section */
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    font-family: Arial;
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration-line: underline;
+    transition: all 1s ease-out;
+
+  }
+
+  #table {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 25%;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    transition: all 0.5s ease-out;
+  }
+
+  #table:hover {
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+  }
+
+  table,
+  td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+  }
+
+  td {
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+
+  th {
+    background: hwb(0 16% 84%);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    transition: all 1s ease-out;
   }
 </style>
 
@@ -228,7 +236,10 @@
     </div>
   </header>
 
-  <h3>Education</h3>
+  <div class="main">
+    <h3>Education</h3>
+  </div>
+
   <div id="table">
     <table>
       <tr>
