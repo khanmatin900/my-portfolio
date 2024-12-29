@@ -11,6 +11,11 @@ header {
   align-items: center;
 }
 
+.profile-tag {
+  display: flex;
+  justify-content: center;
+}
+
 .profile-pic {
   margin-left: 25px;
   margin-top: 10px;
