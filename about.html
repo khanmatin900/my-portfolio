@@ -182,18 +182,127 @@
     text-decoration: underline;
     transition: all 1s ease-out;
   }
+
+  /* Responsive CSS */
+  @media screen and (max-width: 480px) {
+    body {
+      height: 100%vh;
+      background-color: #93e9f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Section*/
+
+    header {
+      height: 250px;
+      border-bottom: 2px solid #efebd6;
+      background-color: #43608a;
+      align-items: center;
+    }
+
+    .profile-tag {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+      margin-bottom: 30%;
+    }
+
+    .profile-pic {
+      margin-left: 5px;
+    }
+
+    .profilePic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .profile {
+      margin-left: 2px;
+      margin-top: 10px;
+      font-family: Arial;
+      color: #efebd6;
+    }
+
+    .profile p {
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 1s ease-out;
+    }
+
+    .span {
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 20%;
+      transition: all 0.5s ease-out;
+      color: #efebd6;
+    }
+
+    .topnav {
+      width: 140px;
+      height: 200px;
+      margin-left: 12px;
+      margin-top: 15px;
+      background-color: #efebd6;
+      border: 2px solid aliceblue;
+      border-radius: 10px;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      transition: all 1s ease-out;
+    }
+
+    .topnav:hover {
+      border: 2px solid #111;
+    }
+
+    .topnav a {
+      display: block;
+      font-family: Arial;
+      font-weight: 600;
+      border-radius: 5px;
+      color: #43608a;
+      padding: 0.3rem;
+      margin: 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.5s ease-out;
+    }
+
+    .topnav a:hover,
+    .topnav a:focus {
+      background-color: #43608a;
+      color: aliceblue;
+    }
+
+    .darkBtn {
+      position: fixed;
+      left: 82%;
+      top: 4%;
+      size: 20px;
+      cursor: pointer;
+      transition: all 0.5s ease-out;
+    }
+  }
 </style>
 
 <body>
 
   <header>
     <div class="navbar">
+      <div class="profile-tag">
+        <div class="profile-pic">
+          <img src="pic/Mateen Photo.jpeg" alt="profilepic" class="profilePic">
+        </div>
 
-      <div class="profile-pic">
-        <img src="pic/Mateen Photo.jpeg" alt="profilepic" class="profilePic">
-      </div>
-      <div class="profile">
-        <p class="profileName">I'M MATEEN <br><span class="span">Front-end Developer</span></p>
+        <div class="profile">
+          <p>I'M MATEEN <br><span class="span">Front-end Developer</span></p>
+        </div>
       </div>
 
       <div class="topnav">

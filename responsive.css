@@ -16,8 +16,10 @@
   }
 
   .profile-tag {
-    margin-left: 15px;
-    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-bottom: 30%;
   }
 
   .profile-pic {
@@ -57,15 +59,16 @@
   }
 
   .topnav {
-    width: 130px;
+    width: 140px;
     height: 200px;
-    margin-left: 25px;
-    margin-top: 18px;
+    margin-left: 12px;
+    margin-top: 15px;
     background-color: #efebd6;
     border: 2px solid aliceblue;
     border-radius: 10px;
     padding: 0.5rem;
     gap: 0.5rem;
+    transition: all 1s ease-out;
   }
   .topnav:hover {
     border: 2px solid #111;
@@ -161,5 +164,10 @@
     transition: all 2s ease-out;
     animation: changeimg 15s infinite;
     background-size: cover;
+    transition: all 2s ease-out;
+  }
+
+  .msg-box {
+    transition: all 1s ease-out;
   }
 }
