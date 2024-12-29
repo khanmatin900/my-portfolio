@@ -166,9 +166,12 @@
     margin-top: 5%;
     font-weight: 600;
     font-size: 2rem;
-    text-decoration-line: underline;
     transition: all 1s ease-out;
+  }
 
+  h3:hover {
+    color: aliceblue;
+    text-decoration: underline;
   }
 
   #table {
@@ -316,6 +319,57 @@
       cursor: pointer;
       transition: all 0.5s ease-out;
     }
+
+    /* Main */
+    .main {
+      display: flex;
+      justify-content: center;
+    }
+
+    h3 {
+      font-family: Arial;
+      margin-top: 5%;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration-line: underline;
+      transition: all 1s ease-out;
+
+    }
+
+    #table {
+      border: 1px solid #111;
+      margin-top: 1%;
+      margin-left: 0%;
+      transition: all 0.5s ease-out;
+    }
+
+    #table:hover {
+      border: 1px solid aliceblue;
+      border-radius: 5px;
+    }
+
+    table,
+    td {
+      font-size: 0.85rem;
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    td {
+      font-size: 8px;
+      font-weight: 400;
+      transition: all 1s ease-out;
+    }
+
+    th {
+      font-size: 10px;
+      background: hwb(0 16% 84%);
+      color: rgb(255, 255, 255);
+      border: 1px solid black;
+      text-align: center;
+      transition: all 1s ease-out;
+    }
   }
 </style>
 
@@ -389,7 +443,8 @@
     </table>
   </div>
 
-  <script src="script.js"></script>
+
 </body>
+<script src="script.js"></script>
 
 </html>
