@@ -29,7 +29,7 @@ header {
   color: #efebd6;
 }
 
-.profileName {
+.profile p {
   font-weight: 800;
   transition: all 1s ease-out;
 }
@@ -155,14 +155,6 @@ body.dark .msg-box {
   color: #efebd6;
 }
 
-.mini {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
 .main p,
 h2 {
   color: #43608a;
@@ -170,6 +162,10 @@ h2 {
   margin-top: -20px;
   font-weight: 600;
   transition: all 0.5s ease-out;
+}
+.main h2 {
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(95, 143, 216),
+    0 0 0.2em rgb(95, 143, 216);
 }
 
 .container-1 {
