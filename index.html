@@ -78,12 +78,11 @@
         <div class="msg-box">
             <fieldset>
                 <legend>Message me</legend>
-                <form action="#">
-                    <input type="text" placeholder="First name"><br>
-                    <input type="text" placeholder="Last name"><br>
-                    <input type="text" placeholder="Contact"><br>
-                    <input type="text" placeholder="Subject"><br>
-                    <textarea name="text" id="text" placeholder="Write something..."></textarea><br>
+                <form action="https://formspree.io/f/xvggqwjn" method="post">
+                    <input type="text" placeholder="Your name" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="contact" placeholder="Contact" required><br>
+                    <textarea name="text" id="text" placeholder="Write something..." required></textarea><br>
                     <button>Send</button>
                 </form>
             </fieldset>
