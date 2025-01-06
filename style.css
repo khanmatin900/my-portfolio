@@ -97,7 +97,7 @@ header {
   top: 5%;
   size: 20px;
   cursor: pointer;
-  border: 1px solid #efebd6;
+  border: 1px solid transparent;
   border-radius: 12px;
   transition: all 1s ease-out;
 }
@@ -197,6 +197,52 @@ h2 {
   transform: scale(1.1);
 }
 
+.btn-container {
+  margin-left: 35%;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid #111;
+  transition: all 1s ease-out;
+  color: #111;
+  background: radial-gradient(
+    circle,
+    rgba(189, 63, 251, 1) 0%,
+    rgba(70, 238, 252, 0.9831582291119573) 100%
+  );
+}
+.btn-container:hover {
+  border: 2px solid aliceblue;
+  transform: scale(1.1);
+  color: #fff;
+}
+.btn-container a {
+  color: #111;
+}
+.btn-container a,
+i {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 1s ease-out;
+}
+.btn-container i {
+  margin-left: 5px;
+  transition: 0ms;
+}
+.btn-container a:hover {
+  color: #fff;
+}
+.btn-container a:hover,
+i:hover {
+  transform: scale(0.9);
+}
+
 .container-1 {
   background-color: #43608a;
   border: 1px solid #fff;
@@ -264,7 +310,7 @@ h2 {
   background: url(design-img/img-1.jpg);
   transition: all 2s ease-out;
   animation: changeImg 15s infinite;
-  background-size: contain;
+  background-size: cover;
 }
 
 @keyframes changeImg {
@@ -287,6 +333,7 @@ h2 {
 
 .img-box:hover {
   border: 2px solid aliceblue;
+  transform: scale(1.1);
 }
 
 /* Message-Section */

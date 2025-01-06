@@ -110,13 +110,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 740px;
+    height: 820px;
     padding: 20px;
   }
 
   .main {
     position: relative;
-    bottom: 40%;
+    bottom: 35%;
   }
 
   .main p,
@@ -133,11 +133,16 @@
   .main p {
     font-size: 1rem;
   }
+  .btn-container {
+    margin-top: 20px;
+  }
 
   .container-1 {
     position: relative;
-    top: 20%;
-    margin-bottom: 10%;
+    top: 22%;
+  }
+  .container-2 {
+    margin-top: 50px;
   }
 
   /* Main-2 Section */
@@ -156,6 +161,8 @@
     gap: 35px;
   }
 
+  /* Image-box*/
+
   .img-box {
     width: 300px;
     height: 250px;
@@ -163,9 +170,30 @@
     border-radius: 12px;
     background: url(design-img/img-1.jpg);
     transition: all 2s ease-out;
-    animation: changeimg 15s infinite;
+    animation: changeImg 15s infinite;
     background-size: cover;
-    transition: all 2s ease-out;
+  }
+
+  @keyframes changeImg {
+    0% {
+      background-image: url(design-img/img-1.jpg);
+    }
+    25% {
+      background-image: url(design-img/img-2.png);
+    }
+    50% {
+      background-image: url(design-img/img-3.avif);
+    }
+    75% {
+      background-image: url(design-img/img-4.webp);
+    }
+    100% {
+      background-image: url(design-img/img-5.png);
+    }
+  }
+
+  .img-box:hover {
+    border: 2px solid aliceblue;
   }
 
   .msg-box {
