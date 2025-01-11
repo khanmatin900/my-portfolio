@@ -1,6 +1,6 @@
 body {
   height: 100%vh;
-  /* background-color: #efebd6; */
+  /* background-color: #efebd6; or  #111845*/
   background-color: #93e9f1;
 }
 
@@ -207,7 +207,7 @@ h2 {
   width: fit-content;
   border-radius: 20px;
   cursor: pointer;
-  border: 2px solid #111;
+  border: 2px solid;
   transition: all 1s ease-out;
   color: #111;
   background: radial-gradient(
@@ -215,9 +215,25 @@ h2 {
     rgba(189, 63, 251, 1) 0%,
     rgba(70, 238, 252, 0.9831582291119573) 100%
   );
+  animation: borderAnimate 5s infinite;
 }
+@keyframes borderAnimate {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: blue;
+  }
+  66% {
+    border-color: green;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
 .btn-container:hover {
-  border: 2px solid aliceblue;
+  border: 2px solid;
   transform: scale(1.1);
   color: #fff;
 }
