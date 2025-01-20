@@ -82,13 +82,13 @@
         <div class="msg-box">
             <fieldset>
                 <legend>Message me</legend>
-                <form action="https://formspree.io/f/xvggqwjn" method="post">
+                <form action="https://formspree.io/f/xvggqwjn" method="post" id="reset">
                     <input type="text" name=Name placeholder="Your name" required><br>
                     <input type="email" name="Email" placeholder="Email" required><br>
                     <input type="contact" name="Contact" placeholder="Contact" required><br>
                     <textarea name="Message" id="message" placeholder="Write something..." required></textarea><br>
-                    <button>Send</button>
-                    <button>Reset</button>
+                    <button class="send-btn">Send</button>
+                    <input type="button" class="reset-btn" onclick="resetBtn()" value="Reset">
                 </form>
             </fieldset>
         </div>
@@ -100,8 +100,13 @@
             matimkhan480@gmail.com
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script>
+    //Reset Btn
+    function resetBtn() {
+        document.getElementById("reset").reset();
+    }</script>
 
 </html>
