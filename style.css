@@ -62,19 +62,20 @@ header {
 }
 
 .topnav {
-  background-color: #efebd6;
-  border: 2px solid aliceblue;
   border-radius: 10px;
   padding: 0.5rem;
-  gap: 0.5rem;
+  gap: 0.6rem;
   margin-left: 22%;
+}
+.topnav a.icon {
+  display: none;
 }
 
 .topnav a {
   font-family: Arial;
   font-weight: 600;
   border-radius: 5px;
-  color: #43608a;
+  color: #2e2b2b;
   padding: 0.3rem;
   margin: 10px;
   text-align: center;
@@ -86,6 +87,7 @@ header {
 .topnav a:focus {
   background-color: #43608a;
   color: aliceblue;
+  text-decoration: underline;
 }
 
 /* Dark-btn section */
@@ -240,13 +242,13 @@ h2 {
   color: #111;
 }
 .btn-container a,
-i {
+#download {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
   transition: all 1s ease-out;
 }
-.btn-container i {
+.btn-container #download {
   margin-left: 5px;
   transition: 0ms;
 }
@@ -254,7 +256,7 @@ i {
   color: #fff;
 }
 .btn-container a:hover,
-i:hover {
+#download:hover {
   transform: scale(0.9);
 }
 
