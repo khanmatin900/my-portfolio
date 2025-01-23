@@ -30,6 +30,11 @@
   .profile-pic {
     margin-left: 25px;
     margin-top: 10px;
+    transition: all 1s ease-out;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.1);
   }
 
   .profilePic {
@@ -42,18 +47,26 @@
     margin-left: 12px;
     margin-top: 25px;
     font-family: Arial;
-    color: #efebd6;
+    transition: all 1s ease-out;
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
   }
 
   .profile p {
     font-weight: 800;
     transition: all 1s ease-out;
+    text-shadow: 1px 1px 2px rgb(215, 151, 191);
   }
 
   .span {
     font-weight: 600;
     margin-top: 10px;
+    text-shadow: 1px 1px 2px rgb(137, 87, 95);
+    transition: all 1s ease-out;
   }
+
 
   .navbar {
     display: flex;
@@ -96,7 +109,14 @@
     top: 5%;
     size: 20px;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: all 1s ease-out;
+  }
+
+  .darkBtn:hover {
+    border: 1px solid #fff;
+    border-radius: 12px;
   }
 
   body.dark {
