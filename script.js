@@ -1,5 +1,5 @@
 
-// Fisrt Method...
+//1st Method...
 
 // const checkbox = document.getElementById("checkbox")
 // checkbox.addEventListener("change", () => {
