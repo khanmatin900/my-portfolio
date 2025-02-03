@@ -7,7 +7,7 @@
 // });
 
 
-// Second Method...
+// Second Method..
 
 // const checkbox = document.getElementById('checkbox');
 // const currentTheme = localStorage.getItem('theme');
