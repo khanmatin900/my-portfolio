@@ -62,7 +62,6 @@
     height: 200px;
     margin-left: 12px;
     margin-top: 15px;
-    background-color: #efebd6;
     border: 2px solid aliceblue;
     border-radius: 10px;
     padding: 0.5rem;
@@ -79,7 +78,7 @@
     font-family: Arial;
     font-weight: 600;
     border-radius: 5px;
-    color: #43608a;
+    color: black;
     padding: 0.3rem;
     margin: 10px;
     text-align: center;
