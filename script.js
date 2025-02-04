@@ -1,5 +1,5 @@
 
-//1st Method...
+// 1st Method...
 
 // const checkbox = document.getElementById("checkbox")
 // checkbox.addEventListener("change", () => {
@@ -10,7 +10,7 @@
 
 
 
-//Third Methods...
+// 2nd Methods...
 
 var checkbox = document.getElementById("checkbox"); //get the checkbox to a variable
 
