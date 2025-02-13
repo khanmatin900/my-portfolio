@@ -1,16 +1,4 @@
-
-// 1st Method...
-
-// const checkbox = document.getElementById("checkbox")
-// checkbox.addEventListener("change", () => {
-//   document.body.classList.toggle("dark");
-// });
-
-
-
-
-
-// 2nd Methods...
+// 1st Methods...
 
 var checkbox = document.getElementById("checkbox"); //get the checkbox to a variable
 
