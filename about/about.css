@@ -162,6 +162,68 @@ body.dark .details {
 
 /* Main Section */
 
+.btn-container {
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid;
+  transition: all 1s ease-out;
+  color: #111;
+  background: radial-gradient(
+    circle,
+    rgba(189, 63, 251, 1) 0%,
+    rgba(70, 238, 252, 0.9831582291119573) 100%
+  );
+  animation: borderAnimate 5s infinite;
+}
+@keyframes borderAnimate {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: blue;
+  }
+  66% {
+    border-color: green;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+.btn-container:hover {
+  border: 2px solid;
+  transform: scale(1.1);
+  color: #fff;
+}
+.btn-container a {
+  color: #111;
+}
+.btn-container a,
+#download {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 1s ease-out;
+}
+.btn-container #download {
+  margin-left: 5px;
+  transition: 0ms;
+}
+.btn-container a:hover {
+  color: #fff;
+}
+.btn-container a:hover,
+#download:hover {
+  transform: scale(0.9);
+}
+
 pre {
   font-weight: 600;
   font-size: large;
@@ -188,6 +250,7 @@ pre {
 }
 
 h3 {
+  margin-top: -25px;
   text-decoration: underline;
   transition: all 1s ease-out;
 }
