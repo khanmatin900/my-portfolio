@@ -199,6 +199,8 @@ h2 {
 }
 
 .btn-container {
+  font-family: sans-serif;
+  font-size: 1rem;
   margin-left: 35%;
   padding: 5px 10px 5px 10px;
   display: flex;
@@ -258,6 +260,10 @@ h2 {
 .btn-container a:hover,
 #download:hover {
   transform: scale(0.9);
+}
+
+.btn-box a {
+  text-decoration: none;
 }
 
 .container-1 {
